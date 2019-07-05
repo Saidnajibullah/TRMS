@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta lang="en" charset="utf-8"> 
+    
+    <title>Application</title>
+        <link rel="stylesheet" href="css/forme.css" >
+    </head>
+    <body>
+        <div class="container">
+                <h2> Employee Reimbursement Application</h2>
+                    <form action="employeeform" method="post" enctype="multipart/form-data">
+                    <div id="home"><a href="login.html">Home<a></div>
+                        <fieldset>
+                            <legend>Reimbursement Form</legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Employee ID</td>
+                                    <td>Full Name</td>
+                                    <td>Supervisor ID</td>
+                                    <td>Date</td>
+                                </tr>
+                                </thead>
+                              <tbody>
+                                <tr>
+                                    <td><input type="text" name="empid" required id="id" ></td>
+                                    <td><input type="text" name="fname" required ></td>
+                                    <td><input type="text" name="supid" required ></td>
+                                    <td><input type="date" name="date" data-date-inline-picker="true" required style="width: 160px"/></td>
+                                </tr>
+                                </tbody>
+                        </table><br>
+                         <table>
+                            <thead>
+                                <tr>
+                                    <td>Event Type</td>
+                                    <td>Location</td>
+                                    <td>Cost</td>
+                                    <td>Award Amount</td>
+                                </tr>
+                                </thead>
+                              <tbody>
+                                <tr>
+                                    <td><select name="events" required >
+                                        <option value="course" >Course</option>
+                                        <option value="seminar" >Seminar</option>
+                                        <option value="training" >Training</option>
+                                        <option value="certification" >Certification</option>
+                                        <option value="preparation" >Certification preparation</option>
+                                        <option value="other" >Others</option>
+                                        </select> 
+                                    </td>
+                                    <td><input type="text" name="location" required ></td>
+                                    <td><input type="number" name="cost" required ></td>
+                                    <td><input type="number" name="amount" id="amount" readonly required></td>
+                                </tr>
+                                </tbody>
+                             <table><br>
+                          <table>
+                             <thead>
+                                <tr>
+                                    <td>Grading</td>
+                                    <td>&nbsp; &nbsp; &nbsp;Supporting Doc</td>
+                                     <td>Presentation &nbsp; &nbsp; &nbsp;</td>
+                                    <td>&nbsp; &nbsp;Supporting Doc</td>
+                                </tr>
+                                </thead>
+                              <tbody>
+                                <tr>
+                                    <td >
+                                        <select name="grade" required>
+                                        <option value="95" >Grad A</option>
+                                        <option value="90" >Grad -A</option>
+                                        <option value="85" >Grad B</option>
+                                        <option value="80" >Grad -B</option>
+                                        <option value="75" >Grad C</option>  
+                                        <option value="70" >Grad -C</option>
+                                        </select>
+                                    </td>
+                                    <td>&nbsp; &nbsp; &nbsp;<input type="file" name="first" required ></td>
+                                    <td><input type="text" size="10" name="pret" readonly required value="Yes" id="yes"></td>
+                                    <td>&nbsp; &nbsp;<input type="file" name="second" id="file" required ></td>
+                                </tr>
+                                </tbody>
+                        </table><br>
+                                 <p>Justification</p>
+                                 <textarea name="justification" rows="10" cols="90">
+                                 </textarea><br>
+                                 <input type="submit" value="Submit" name="submit" id="submit">
+                        </fieldset>
+                             
+                                 
+                    </form>
+        </div>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

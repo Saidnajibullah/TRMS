@@ -1,0 +1,64 @@
+.container{
+    position: relative;
+    width: 900px;
+    margin: auto;
+    height: 620px;
+    background-color: #64b5f6;
+    padding-top: 20px;
+    
+}
+.container h2{
+    text-align: center;
+    color: darkmagenta;
+}
+.container fieldset{
+    position: relative;
+    margin: auto;
+    font-weight: bold;
+    width: 750px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+#submit{
+    position: relative;
+    margin-top: 20px;
+    left: 40%;
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: chartreuse;
+}
+#file{
+    margin-right: -100px;
+}
+form input, select{
+    height: 20px;
+}
+form select{
+    height: 25px;
+}
+
+#home{
+    position: absolute;
+    right: 132px;
+    height: 40px;
+    width: 60px;
+    box-shadow: 1px 1px 3px grey ;
+    margin: -55px;
+    text-align: center;
+    padding-top: 13px;
+    box-sizing: border-box;
+    
+}
+#home a{
+   font-weight: bold; 
+   text-decoration: none;
+}
+#home:hover{
+    background-color: chartreuse;
+}
+
